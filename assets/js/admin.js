@@ -72,7 +72,7 @@ window.ADM = { pages: {} };
     return nav;
   }
   side.appendChild(el('div', { class: 'side-brand' },
-    el('div', { class: 'logo-plate', style: { height: '64px' } }, el('img', { src: 'assets/img/logo.png', alt: '峰欧服饰', style: { height: '100%', width: 'auto', display: 'block' } })),
+    el('div', { class: 'logo-plate', style: { height: '110px', minWidth: '176px', justifyContent: 'center' } }, el('img', { src: 'assets/img/logo.png?v=2026b', alt: '峰欧服饰', style: { height: '96px', width: 'auto', display: 'block' } })),
     el('div', { class: 't1', text: '订货分销系统' }),
     el('div', { class: 't2', text: 'FENGOU · B2B ORDER' })));
   side.appendChild(buildNav());

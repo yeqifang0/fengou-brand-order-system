@@ -37,7 +37,7 @@
   const header = el('header', { class: 'd-header' },
     el('div', { class: 'd-top' },
       el('a', { class: 'd-brand', href: '#/mall' },
-        el('img', { class: 'brand-img', src: 'assets/img/logo.png', alt: '峰欧服饰' }),
+        el('img', { class: 'brand-img', src: 'assets/img/logo.png?v=2026b', alt: '峰欧服饰' }),
         el('div', { class: 'd-brand-sep' }),
         el('div', { style: { fontSize: '12.5px', color: 'var(--ink2)', letterSpacing: '.14em', fontWeight: 500 } }, '经销商订货平台')),
       navEl,
@@ -99,7 +99,7 @@
         const stock = XK.stockOfStyle(st);
         grid.appendChild(el('div', { class: 'goods', onclick: () => location.hash = '#/style?id=' + st.id },
           el('div', { class: 'pic', style: { background: catGrad(st.categoryId) } },
-            st.isNew && fSeason === 'S1' ? el('span', { class: 'tagnew', text: '本��新品' }) : null,
+            st.isNew && fSeason === 'S1' ? el('span', { class: 'tagnew', text: '本季新品' }) : null,
             el('span', { class: 'wm', text: st.code.split('-')[1] || st.code }),
             el('span', { class: 'season', text: XK.season(st.seasonId)?.code + ' · ' + XK.category(st.categoryId)?.name })),
           el('div', { class: 'bd' },
