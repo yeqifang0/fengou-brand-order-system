@@ -345,6 +345,10 @@ table.mx .tot{font-family:var(--num);color:var(--ink);font-weight:600}
 /* ============ 品牌Logo（峰欧服饰） ============ */
 .logo-plate{background:#fff;border-radius:12px;padding:7px 11px;display:flex;align-items:center;box-shadow:0 6px 20px -8px rgba(0,0,0,.55);flex:none}
 .logo-plate img{display:block;height:100%;width:auto}
-.brand-img{height:42px;width:auto;display:block}
-.d-brand-sep{width:1px;height:30px;background:var(--line);margin:0 6px;flex:none}
+.side-brand{padding:20px 14px 14px;display:flex;flex-direction:column;align-items:center;gap:7px;border-bottom:1px solid var(--navy-line)}
+.side-brand .logo-plate{padding:6px 15px}
+.side-brand .t1{font-size:14px;color:#F2EDE3;font-weight:600;letter-spacing:.14em}
+.side-brand .t2{font-size:9.5px;color:#77819A;letter-spacing:.22em}
+.brand-img{height:50px;width:auto;display:block}
+.d-brand-sep{width:1px;height:34px;background:var(--line);margin:0 6px;flex:none}
 @media (max-width:1100px){.mall-grid{grid-template-columns:repeat(3,1fr)}.kpis{grid-template-columns:repeat(2,1fr)}.grid-2,.grid-2b{grid-template-columns:1fr}.goods-detail{grid-template-columns:1fr}}
