@@ -54,7 +54,7 @@
   const main = el('div', {}, header, body,
     el('footer', { class: 'd-foot' },
       el('div', {}, '© 2026 上海峰欧服饰有限公司 · 峰欧 FENGOU 经销商订货平台 · ' + me.name),
-      el('div', { style: { marginTop: '6px' } }, el('span', { class: 'gold', text: '技术支持：诩可科技（上海诩可科技有限公司）' }))));
+      el('div', { style: { marginTop: '6px' } }, el('span', { class: 'gold', text: '技术支持：诩可科技' }))));
   document.body.prepend(main);
 
   function setPage() {
@@ -99,7 +99,7 @@
         const stock = XK.stockOfStyle(st);
         grid.appendChild(el('div', { class: 'goods', onclick: () => location.hash = '#/style?id=' + st.id },
           el('div', { class: 'pic', style: { background: catGrad(st.categoryId) } },
-            st.isNew && fSeason === 'S1' ? el('span', { class: 'tagnew', text: '本季新品' }) : null,
+            st.isNew && fSeason === 'S1' ? el('span', { class: 'tagnew', text: '本��新品' }) : null,
             el('span', { class: 'wm', text: st.code.split('-')[1] || st.code }),
             el('span', { class: 'season', text: XK.season(st.seasonId)?.code + ' · ' + XK.category(st.categoryId)?.name })),
           el('div', { class: 'bd' },
