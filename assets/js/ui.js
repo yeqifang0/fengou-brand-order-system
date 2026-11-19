@@ -331,7 +331,7 @@ window.UI = (function () {
   function footer(extra) {
     return el('div', { class: 'page-foot' },
       el('div', {}, `© 2026 上海峰欧服饰有限公司 · 品牌订货分销系统 V1.0${extra ? '　|　' + extra : ''}`),
-      el('div', { style: { marginTop: '4px' } }, el('span', { class: 'gold', text: '技术支持：诩可科技（上海诩可科技有限公司）' })));
+      el('div', { style: { marginTop: '4px' } }, el('span', { class: 'gold', text: '技术支持：诩可科技' })));
   }
 
   /* ---------- 品类视觉底图（无外部图片，渐变生成） ---------- */
