@@ -71,9 +71,10 @@ window.ADM = { pages: {} };
     });
     return nav;
   }
-  side.appendChild(el('div', { class: 'side-logo' },
-    el('img', { src: 'assets/img/logo.png', alt: '峰欧服饰', style: { height: '34px', width: 'auto', display: 'block', background: '#fff', borderRadius: '8px', padding: '3px 6px', boxShadow: '0 4px 14px -6px rgba(0,0,0,.5)' } }),
-    el('div', {}, el('div', { class: 't1', text: '订货分销系统' }), el('div', { class: 't2', text: 'FENGOU · B2B ORDER' }))));
+  side.appendChild(el('div', { class: 'side-brand' },
+    el('div', { class: 'logo-plate', style: { height: '64px' } }, el('img', { src: 'assets/img/logo.png', alt: '峰欧服饰', style: { height: '100%', width: 'auto', display: 'block' } })),
+    el('div', { class: 't1', text: '订货分销系统' }),
+    el('div', { class: 't2', text: 'FENGOU · B2B ORDER' })));
   side.appendChild(buildNav());
   const roleLabel = sess.role === 'admin' ? '系统管理员' : '运营';
   if (sess.role !== 'admin') { // 运营隐藏权限管理
@@ -247,7 +248,7 @@ window.ADM = { pages: {} };
       box.appendChild(tbl.el);
     }
     function exportStyles() {
-      exportXLS('款式档案_' + U.dstr(new Date()), ['款号', '款式名称', '品���', '品类', '季节', '吊牌价', '尺码组', '颜色', '状态'],
+      exportXLS('款式档案_' + U.dstr(new Date()), ['款号', '款式名称', '品牌', '品类', '季节', '吊牌价', '尺码组', '颜色', '状态'],
         db.styles.map(s => [s.code, s.name, XK.brand(s.brandId)?.name, XK.category(s.categoryId)?.name, XK.season(s.seasonId)?.name, s.tagPrice, XK.sizeGroup(s.sizeGroupId)?.name, s.colorIds.map(c => XK.color(c)?.name).join('/'), s.status === 'on' ? '上架' : '下架']), '款式档案');
       toast('已导出款式档案');
     }
