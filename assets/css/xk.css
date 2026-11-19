@@ -198,7 +198,7 @@ table.xk .strong{color:var(--ink);font-weight:500}
 .toast svg{width:16px;height:16px}
 .toast.ok svg{color:#6BCB95}.toast.err svg{color:#F0958B}.toast.warn svg{color:#EBBA6F}
 
-/* ============ 描述列表 / 时间线 ============ */
+/* ============ 描述列表 / ���间线 ============ */
 .desc{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line2);border-radius:12px;overflow:hidden;margin-bottom:18px}
 .desc .d{padding:11px 16px;border-bottom:1px solid var(--line2);background:#FAFBFD;font-size:13px}
 .desc .d:nth-child(4n+1),.desc .d:nth-child(4n+2){border-right:1px solid var(--line2)}
@@ -229,7 +229,7 @@ table.mx .tot{font-family:var(--num);color:var(--ink);font-weight:600}
 
 /* ============ 经销商端 ============ */
 .d-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.d-top{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:26px;padding:0 24px;height:66px}
+.d-top{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:26px;padding:0 24px;height:74px}
 .d-brand{display:flex;align-items:center;gap:11px}
 .d-brand .mark{width:40px;height:40px;border-radius:12px;background:var(--navy);color:var(--gold2);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;letter-spacing:.03em;border:1px solid rgba(201,160,99,.45)}
 .d-brand .t1{font-size:16px;font-weight:700;letter-spacing:.1em;color:var(--ink)}
@@ -347,8 +347,8 @@ table.mx .tot{font-family:var(--num);color:var(--ink);font-weight:600}
 .logo-plate img{display:block;height:100%;width:auto}
 .side-brand{padding:20px 14px 14px;display:flex;flex-direction:column;align-items:center;gap:7px;border-bottom:1px solid var(--navy-line)}
 .side-brand .logo-plate{padding:6px 15px}
-.side-brand .t1{font-size:14px;color:#F2EDE3;font-weight:600;letter-spacing:.14em}
+.side-brand .t1{font-size:13px;color:#F2EDE3;font-weight:600;letter-spacing:.14em}
 .side-brand .t2{font-size:9.5px;color:#77819A;letter-spacing:.22em}
-.brand-img{height:50px;width:auto;display:block}
-.d-brand-sep{width:1px;height:34px;background:var(--line);margin:0 6px;flex:none}
+.brand-img{height:64px;width:auto;display:block}
+.d-brand-sep{width:1px;height:42px;background:var(--line);margin:0 8px;flex:none}
 @media (max-width:1100px){.mall-grid{grid-template-columns:repeat(3,1fr)}.kpis{grid-template-columns:repeat(2,1fr)}.grid-2,.grid-2b{grid-template-columns:1fr}.goods-detail{grid-template-columns:1fr}}
